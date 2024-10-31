@@ -8,3 +8,7 @@ void calculoSuperficieCilindroLateral(radio, h){
 void calculoSuperficieCilindroTransversal(radio,h){
     float superficie = 2*(pi*radio*h+pi*radio^2);
 }
+
+void calculoVolumenCilindro(radio,h){
+    float volumen = pi*radio^2*h;
+}

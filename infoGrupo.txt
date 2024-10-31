@@ -10,3 +10,4 @@ Motivo por escoger al lider:
 Division de tareas
 
 Cesar Mera: Hacer el makefile
+Cecilia Montes: Literal 1 y 2

@@ -1,35 +1,29 @@
 #include <stdio.h>
-
-int main(){
+#include "menu2d.h"
+#include "menu3d.h"
+int main() {
     int opcion;
-    
+    char repetir;
+
     do {
-        printf("\nSeleccione una figura geométrica para calcular el área:\n");
-        printf("1. Triángulo\n");
-        printf("2. Paralelogramo\n");
-        printf("3. Cuadrado\n");
-        printf("4. Rectángulo\n");
-        printf("5. Rombo\n");
-        printf("6. Trapecio\n");
-        printf("7. Círculo\n");
-        printf("8. Polígono regular\n");
-        printf("9. Salir\n");
+        printf("\nSeleccione una opción:\n");
+        printf("1. Cálculo de área y perímetro (Figuras 2D)\n");
+        printf("2. Cálculo de superficie y volumen (Figuras 3D)\n");
+        printf("3. Salir\n");
         printf("Opción: ");
         scanf("%d", &opcion);
 
         switch(opcion) {
-            case 1: triangulo(); break;
-            case 2: paralelogramo(); break;
-            case 3: cuadrado(); break;
-            case 4: rectangulo(); break;
-            case 5: rombo(); break;
-            case 6: trapecio(); break;
-            case 7: circulo(); break;
-            case 8: poligono(); break;
-            case 9: printf("Saliendo del programa...\n"); break;
+            case 1: menu2D(); break;
+            case 2: menu3D(); break;
+            case 3: printf("Saliendo del programa...\n"); return 0;
             default: printf("Opción no válida. Intente nuevamente.\n");
         }
-    } while(opcion != 9);
+        
+        printf("\n¿Desea realizar el análisis de otra figura geométrica? (s/n): ");
+        scanf(" %c", &repetir);
+
+    } while(repetir == 's' || repetir == 'S');
 
     return 0;
 }

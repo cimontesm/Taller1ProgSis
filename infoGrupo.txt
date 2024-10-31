@@ -1,10 +1,12 @@
 Grupo conformado por 
 
-Cecilia Montes, 
-Ariel Arias,
-Cesar Meras,
+Cecilia Montes, integrante
+Ariel Arias, integrante
+Cesar Mera, Lider
 
 Motivo por escoger al lider:
 
 
 Division de tareas
+
+Cesar Mera: Hacer el makefile

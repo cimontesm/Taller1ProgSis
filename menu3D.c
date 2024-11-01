@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "figuras3d.h"
+#include "datos.h"
 #include "menu3D.h"
 void menu3D() {
     int opcion;

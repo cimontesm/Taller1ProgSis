@@ -1,4 +1,4 @@
-#include "figuras2d.h"
+#include "datos.h"
 #include <stdio.h>
 #include "menu2D.h"
 void menu2D() {

@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include "menu2d.h"
-#include "menu3d.h"
+#include "menu2D.h"
+#include "menu3D.h"
+
 int main() {
     int opcion;
     char repetir;

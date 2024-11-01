@@ -11,8 +11,8 @@ void triangulo() {
     scanf("%f", &altura);
     printf("Ingrese los tres lados del triángulo: ");
     scanf("%f %f %f", &lado1, &lado2, &lado3);
-    printf("Área: %.2f\n", (base * altura) / 2);
-    printf("Perímetro: %.2f\n", lado1 + lado2 + lado3);
+    printf("Área: %.2f m2\n", (base * altura) / 2);
+    printf("Perímetro: %.2f m2\n", lado1 + lado2 + lado3);
 }
 
 void paralelogramo() {
@@ -23,16 +23,16 @@ void paralelogramo() {
     scanf("%f", &altura);
     printf("Ingrese la longitud del lado: ");
     scanf("%f", &lado);
-    printf("Área: %.2f\n", base * altura);
-    printf("Perímetro: %.2f\n", 2 * (base + lado));
+    printf("Área: %.2f m2\n", base * altura);
+    printf("Perímetro: %.2f m2\n", 2 * (base + lado));
 }
 
 void cuadrado() {
     float lado;
     printf("Ingrese el lado del cuadrado: ");
     scanf("%f", &lado);
-    printf("Área: %.2f\n", lado * lado);
-    printf("Perímetro: %.2f\n", 4 * lado);
+    printf("Área: %.2f m2\n", lado * lado);
+    printf("Perímetro: %.2f m2\n", 4 * lado);
 }
 
 void rectangulo() {
@@ -41,8 +41,8 @@ void rectangulo() {
     scanf("%f", &base);
     printf("Ingrese la altura del rectángulo: ");
     scanf("%f", &altura);
-    printf("Área: %.2f\n", base * altura);
-    printf("Perímetro: %.2f\n", 2 * (base + altura));
+    printf("Área: %.2f m2\n", base * altura);
+    printf("Perímetro: %.2f m2\n", 2 * (base + altura));
 }
 
 void rombo() {
@@ -53,8 +53,8 @@ void rombo() {
     scanf("%f", &d);
     printf("Ingrese el lado del rombo: ");
     scanf("%f", &lado);
-    printf("Área: %.2f\n", (D * d) / 2);
-    printf("Perímetro: %.2f\n", 4 * lado);
+    printf("Área: %.2f m2\n", (D * d) / 2);
+    printf("Perímetro: %.2f m2\n", 4 * lado);
 }
 
 void trapecio() {
@@ -67,16 +67,16 @@ void trapecio() {
     scanf("%f", &altura);
     printf("Ingrese los dos lados no paralelos: ");
     scanf("%f %f", &lado1, &lado2);
-    printf("Área: %.2f\n", ((B + b) * altura) / 2);
-    printf("Perímetro: %.2f\n", B + b + lado1 + lado2);
+    printf("Área: %.2f m2\n", ((B + b) * altura) / 2);
+    printf("Perímetro: %.2f m2\n", B + b + lado1 + lado2);
 }
 
 void circulo() {
     float radio;
     printf("Ingrese el radio del círculo: ");
     scanf("%f", &radio);
-    printf("Área: %.2f\n", PI * radio * radio);
-    printf("Perímetro (circunferencia): %.2f\n", 2 * PI * radio);
+    printf("Área: %.2f m2\n", PI * radio * radio);
+    printf("Perímetro (circunferencia): %.2f m2\n", 2 * PI * radio);
 }
 
 void poligono() {
@@ -88,16 +88,16 @@ void poligono() {
     printf("Ingrese el apotema del polígono: ");
     scanf("%f", &apotema);
     perimetro = num_lados * lado;
-    printf("Área: %.2f\n", (perimetro * apotema) / 2);
-    printf("Perímetro: %.2f\n", perimetro);
+    printf("Área: %.2f m2\n", (perimetro * apotema) / 2);
+    printf("Perímetro: %.2f m2\n", perimetro);
 }
 
 void cubo() {
     float lado;
     printf("Ingrese el lado del cubo: ");
     scanf("%f", &lado);
-    printf("Superficie: %.2f\n", 6 * lado * lado);
-    printf("Volumen: %.2f\n", pow(lado, 3));
+    printf("Superficie: %.2f m3\n", 6 * lado * lado);
+    printf("Volumen: %.2f m3\n", pow(lado, 3));
 }
 
 void cuboide() {
@@ -108,8 +108,8 @@ void cuboide() {
     scanf("%f", &ancho);
     printf("Ingrese la altura del cuboide: ");
     scanf("%f", &altura);
-    printf("Superficie: %.2f\n", 2 * (largo * ancho + ancho * altura + largo * altura));
-    printf("Volumen: %.2f\n", largo * ancho * altura);
+    printf("Superficie: %.2f m3\n", 2 * (largo * ancho + ancho * altura + largo * altura));
+    printf("Volumen: %.2f m3\n", largo * ancho * altura);
 }
 
 void cilindro() {
@@ -118,16 +118,16 @@ void cilindro() {
     scanf("%f", &radio);
     printf("Ingrese la altura del cilindro: ");
     scanf("%f", &altura);
-    printf("Superficie: %.2f\n", 2 * PI * radio * (radio + altura));
-    printf("Volumen: %.2f\n", PI * pow(radio, 2) * altura);
+    printf("Superficie: %.2f m3\n", 2 * PI * radio * (radio + altura));
+    printf("Volumen: %.2f m3\n", PI * pow(radio, 2) * altura);
 }
 
 void esfera() {
     float radio;
     printf("Ingrese el radio de la esfera: ");
     scanf("%f", &radio);
-    printf("Superficie: %.2f\n", 4 * PI * pow(radio, 2));
-    printf("Volumen: %.2f\n", (4.0/3) * PI * pow(radio, 3));
+    printf("Superficie: %.2f m3\n", 4 * PI * pow(radio, 2));
+    printf("Volumen: %.2f m3\n", (4.0/3) * PI * pow(radio, 3));
 }
 
 void cono() {
@@ -137,6 +137,6 @@ void cono() {
     scanf("%f", &radio);
     printf("Ingrese la altura del cono: ");
     scanf("%f", &altura);
-    printf("Superficie: %.2f\n", PI * radio * (radio + sqrt(pow(altura, 2) + pow(radio, 2))));
-    printf("Volumen: %.2f\n", (PI * pow(radio, 2) * altura) / 3);
+    printf("Superficie: %.2f m3\n", PI * radio * (radio + sqrt(pow(altura, 2) + pow(radio, 2))));
+    printf("Volumen: %.2f m3\n", (PI * pow(radio, 2) * altura) / 3);
 }

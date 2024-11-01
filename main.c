@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "menu2D.h"
-#include "menu3D.h"
+#include "menu.h"
 
 int main() {
     int opcion;

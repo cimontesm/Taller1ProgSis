@@ -1,4 +1,4 @@
-#ifndef DATOS_H
+ #ifndef DATOS_H
 #define DATOS_H
 void triangulo();
 void paralelogramo();
@@ -13,4 +13,4 @@ void cuboide();
 void cilindro();
 void esfera();
 void cono();
-#endif  
+#endif 

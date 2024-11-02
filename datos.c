@@ -10,8 +10,12 @@ void triangulo() {
     scanf("%f", &base);
     printf("Ingrese la altura del triángulo: ");
     scanf("%f", &altura);
-    printf("Ingrese los tres lados del triángulo: ");
-    scanf("%f %f %f", &lado1, &lado2, &lado3);
+    printf("Ingrese el primer lado del triángulo: ");
+    scanf("%f", &lado1);
+    printf("Ingrese el segundo lado del triángulo: ");
+    scanf("%f", &lado2);
+    printf("Ingrese el tercer lado del triángulo: ");
+    scanf("%f", &lado3);
     printf("Área: %.2f m2\n", (base * altura) / 2);
     printf("Perímetro: %.2f m2\n", lado1 + lado2 + lado3);
 }
@@ -66,8 +70,10 @@ void trapecio() {
     scanf("%f", &b);
     printf("Ingrese la altura del trapecio: ");
     scanf("%f", &altura);
-    printf("Ingrese los dos lados no paralelos: ");
-    scanf("%f %f", &lado1, &lado2);
+    printf("Ingrese el primer lado paralelo: ");
+    scanf("%f", &lado1);
+    printf("Ingrese el segundo lado paralelo: ");
+    scanf("%f", &lado2);
     printf("Área: %.2f m2\n", ((B + b) * altura) / 2);
     printf("Perímetro: %.2f m2\n", B + b + lado1 + lado2);
 }

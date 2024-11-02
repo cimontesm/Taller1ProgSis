@@ -1,5 +1,6 @@
 #include <math.h>
 #include "datos.h"
+#include <stdio.h>
 #define  PI 3.14159265358979323846
 
 
